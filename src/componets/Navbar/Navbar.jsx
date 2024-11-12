@@ -78,7 +78,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end pr-7 ">
-                <div className="flex items-center gap-2 border border-sky-700 rounded-xl shadow-xl px-2 py-1">
+                <div className="font-semibold flex items-center gap-2 border border-sky-700 rounded-xl shadow-xl px-2 py-1">
                   <img className="size-8" src={user} alt="" />
                 <Link>Login</Link>
          </div>
