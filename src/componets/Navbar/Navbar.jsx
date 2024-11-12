@@ -46,7 +46,7 @@ const Navbar = () => {
     )
 
     return (
-        <div className="navbar border-b-2 pr-5 bg-amber-50">
+        <div className="navbar border-b-2 p-16   bg-amber-50 md:h-32">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -77,7 +77,7 @@ const Navbar = () => {
                 {navlink}
           </ul>
         </div>
-        <div className="navbar-end">
+        <div className="navbar-end pr-7">
           <a className="btn">Button</a>
         </div>
       </div>
