@@ -1,9 +1,12 @@
+import Header from "../../componets/Header/Header";
+import Navbar from "../../componets/Navbar/Navbar";
 
 
 const Home = () => {
     return (
-        <div>
-            <h1>Home</h1>
+        <div className="bg-amber-50">
+           
+            <Navbar ></Navbar>
         </div>
     );
 };

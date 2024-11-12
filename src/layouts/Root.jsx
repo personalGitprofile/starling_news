@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 
 const Root = () => {
     return (
-        <div>
+        <div className="bg-stone-100 w-full mx-auto px-14">
           <Outlet></Outlet>
         </div>
     );
