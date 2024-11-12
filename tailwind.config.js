@@ -6,6 +6,10 @@ module.exports = {
   ],
 
   theme: {
+    fontFamily: {
+      'display': ['ui-sans-serif', 'system-ui', ],
+      
+    },
     extend: {},
   },
   plugins: [

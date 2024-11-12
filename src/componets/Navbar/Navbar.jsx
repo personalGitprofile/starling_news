@@ -1,20 +1,20 @@
 import { Link, NavLink } from "react-router-dom";
 import Header from "../Header/Header";
-
+import user from '../../assets/user.png'
 
 const Navbar = () => {
     const navlink = (
-        <>
+        < >
             <li>
             <NavLink
           to="/"
           className={({ isActive }) =>
             isActive
-              ? "bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent " // Active link styles
+              ? "underline font-semibold bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent " // Active link styles
               : "text-gray-500"
           }
         >
-          Home
+          <p className="text-base">Home</p>
         </NavLink>
               </li>
             <li>
@@ -22,11 +22,11 @@ const Navbar = () => {
           to="/about"
           className={({ isActive }) =>
             isActive
-              ? "bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent " // Active link styles
+              ? "underline font-semibold bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent " // Active link styles
               : "text-gray-500"
           }
         >
-          About
+      <p className="text-base">About</p>
         </NavLink>
               </li>
             <li>
@@ -34,11 +34,11 @@ const Navbar = () => {
           to="/career"
           className={({ isActive }) =>
             isActive
-              ? "bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent " // Active link styles
+              ? "underline font-semibold bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent " // Active link styles
               : "text-gray-500"
           }
         >
-          Career
+          <p className="text-base">Career</p>
         </NavLink>
               </li>
               
@@ -46,7 +46,7 @@ const Navbar = () => {
     )
 
     return (
-        <div className="navbar border-b-2 p-16   bg-amber-50 md:h-32">
+        <div className="navbar border-b-2 p-16   bg-amber-50 md:h-32 font-display ">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -77,8 +77,11 @@ const Navbar = () => {
                 {navlink}
           </ul>
         </div>
-        <div className="navbar-end pr-7">
-          <a className="btn">Button</a>
+        <div className="navbar-end pr-7 ">
+                <div className="flex items-center gap-2 border border-sky-700 rounded-xl shadow-xl px-2 py-1">
+                  <img className="size-8" src={user} alt="" />
+                <Link>Login</Link>
+         </div>
         </div>
       </div>
     );
