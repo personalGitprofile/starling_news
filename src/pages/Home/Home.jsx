@@ -4,9 +4,9 @@ import Navbar from "../../componets/Navbar/Navbar";
 
 const Home = () => {
     return (
-        <div className="bg-amber-50">
+        <div >
            
-            <Navbar ></Navbar>
+            
         </div>
     );
 };
