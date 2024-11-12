@@ -4,7 +4,7 @@ import { FaCalendarCheck } from "react-icons/fa";
 const LeftSIdeNews = () => {
     return (
         <>
-            <div>
+            <div className='pb-8 border-b border-slate-200 mb-7'>
             <img src={baby} alt="" />
             <h3 className='font-display font-semibold text-lg py-2 text-justify'>Sets the interval between each scroll movement in milliseconds.</h3>
             <div className='flex '>
@@ -15,7 +15,7 @@ const LeftSIdeNews = () => {
             </div>
             </div>
             
-            <div>
+            <div className='pb-8 border-b border-slate-200 mb-7'>
             <img src={baby} alt="" />
             <h3 className='font-display font-semibold text-lgpy-2 text-justify'>Sets the interval between each scroll movement in milliseconds.</h3>
             <div className='flex '>

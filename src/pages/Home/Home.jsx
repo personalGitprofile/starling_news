@@ -7,7 +7,7 @@ import RightSideHome from "../../componets/RightSideHome/RightSideHome";
 
 const Home = () => {
     return (
-        <div className="w-full mx-10 " >
+        <div className="w-full " >
             <Marquee></Marquee>
             <div className="grid grid-cols-4 gap-4 mx-auto mt-6 p-5">
                 <LeftSideHome ></LeftSideHome>
