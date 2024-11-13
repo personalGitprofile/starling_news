@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const LoginUser = () => {
@@ -45,8 +46,9 @@ const LoginUser = () => {
         //         </div>
         
         <div className="w-6/12 bg-base-200 mx-auto py-24">
-        <div className=" ">
         
+        <div className=" ">
+        <h2 className="text-center py-4 font-bold text-3xl text-[#456787]">Login</h2>
           <div className="card bg-base-100   ">
             <form className="card-body ">
               <div className="form-control">
@@ -69,7 +71,8 @@ const LoginUser = () => {
               </div>
             </form>
           </div>
-        </div>
+            </div>
+            <p className="text-center p-3">New user? Please <Link to='/registration' className="font-semibold">Registration</Link></p>
       </div>
     );
 };
