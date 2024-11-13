@@ -1,5 +1,5 @@
 import FindUs from "../FindUs/FindUs";
-import Login from "../Login/Login";
+import Login from "../LoginWithComponent/Login";
 import Q_zone from "../Q_Zone/Q_zone";
 
 
