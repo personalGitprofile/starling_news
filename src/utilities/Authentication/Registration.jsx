@@ -31,7 +31,7 @@ const Registration = () => {
                 </label>
               </div>
               <div className="form-control mt-6">
-                <button className="btn text-white bg-[#456787] hover:bg-teal-950">Login</button>
+                <button className="btn text-white bg-[#456787] hover:bg-teal-950">Registration</button>
               </div>
             </form>
           </div>
