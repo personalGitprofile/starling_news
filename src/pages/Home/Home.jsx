@@ -7,14 +7,17 @@ import RightSideHome from "../../componets/RightSideHome/RightSideHome";
 import NewsCard from "./NewsCard";
 
 
+
 const Home = () => {
-    const news  = useLoaderData()
+    const news = useLoaderData()
+  
     console.log(news)
     return (
         <div className="w-full " >
             <Marquee></Marquee>
             <div className="grid grid-cols-4 gap-4 mx-auto mt-6 p-5">
-                <LeftSideHome ></LeftSideHome>
+            
+               <LeftSideHome></LeftSideHome>
                 <div className="col-span-2 border">
                     <div>
                         <h1 className="font-bold p-5">Starling News Agency Home</h1>
