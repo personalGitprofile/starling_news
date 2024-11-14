@@ -12,7 +12,16 @@ const Registration = () => {
         const name = form.get('text');
         const email = form.get('email');
         const password = form.get('password');
-        console.log(name,email,password)
+        console.log(name, email, password)
+        
+        // create user
+        creatUser(email, password)
+            .then(result => {
+            console.log(result.user)
+            })
+            .catch(error => {
+            console.error(error)
+        })
     }
     return (
         <div className="md:w-6/12 bg-base-200 mx-auto py-24">
