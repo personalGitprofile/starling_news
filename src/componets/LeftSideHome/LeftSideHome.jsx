@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import LeftSIdeNews from "./LeftSIdeNews";
 import { useEffect, useState } from "react";
 
@@ -15,7 +15,7 @@ const LeftSideHome = () => {
         <h1 className="font-bold p-5">All Category </h1>
         <div className="font-semibold  ml-7 p-2">
           {category.map((newsCategory) => (
-            <li className="list-none  py-1 hover:bg-red-600 hover:text-white">
+            <li key={newsCategory.id} className="list-none  py-1 hover:bg-red-600 hover:text-white">
               <Link className="px-4">{newsCategory.name}</Link>
             </li>
           ))}
