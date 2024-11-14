@@ -12,6 +12,7 @@ const Navbar = () => {
       .then()
     .catch()
   }
+  console.log(user)
     const navlink = (
         < >
             <li>
