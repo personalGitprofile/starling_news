@@ -22,18 +22,25 @@ import { useLoaderData, useParams } from "react-router-dom";
 const NewsDetails = () => {
   
 
-    const newsDetails = useLoaderData()
-    const { id } = useParams()
-    console.log(newsDetails._id)
+    const id = useParams()
+    // before I try here using carly bracet that give me false feedback then I use only id and I get correct output
+    console.log(id)
 
 
 
 
- 
+    const myNews = useLoaderData()
+    console.log(myNews)
+
+    const dNews = myNews.find((p) => p.id === id.parseInt)
+    console.log(dNews)
 
     return (
         <div>
-            <h1>Hello details</h1>
+            <img src={dNews.image_url} alt="" />
+            <h1>Hello details{dNews.title}</h1>
+            <p>{dNews.details}</p>
+            
          
         
         </div>
